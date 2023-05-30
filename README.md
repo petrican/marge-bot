@@ -26,7 +26,7 @@ their
 [semi-linear history and fast-forward](https://docs.gitlab.com/ee/user/project/merge_requests/) merge
 request methods: in both cases a merge request can only be accepted if the
 resulting master branch will be effectively the same as the merge request branch
-on which CI has passed. If master has changed since the tests were last ran, it
+on which CI has passed. If master has changed since the tests were last run, it
 is the *user's responsibility* to rebase the changes and retry. But this just
 doesn't scale: if you have, a mono-repo, a large team working on short-lived
 branches, a CI pipeline that takes 5-10 minutes to complete... then the number
@@ -376,7 +376,7 @@ want to use docker we recommend you give nix a try.
 #### Installing marge-bot the old-fashioned way
 
 Finally, although this is our least preferred alternative, you can always do
-`python3 setup.py install` (note that you will need python3.6).
+`python3 setup.py install` (note that you can use python3.6 to python3.9).
 
 Afterwards, the minimal way to run marge is as follows.
 
